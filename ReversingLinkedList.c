@@ -59,17 +59,12 @@ void PrintList(List L){
 		p=p->Nextptr;
 	}
 }
-struct Node arr[MaxSize];
 int main(){
 	int N,k;
 	Position firstAddr;
 	scanf("%d%d%d",&firstAddr,&N,&k);
 	List L=ReadList(firstAddr,N);
-	int time=N/k;
-	while(time){
-		L=ReverseList(L,k);	
-		time--;
-	}
+	L=ReverseList(L,k);	
 	PrintList(L);
 	return 0;
 } 
