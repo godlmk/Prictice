@@ -74,12 +74,13 @@ int main(){
 			scanf("%d",&squ[j]);
 		}
 	//	判断是否能输出这个结果
+	//	需先初始化堆栈，不然结果可能不对 
 	makeEmpty(s);
 	result=check(squ,s,N);
 	if(result) 
-		printf("Yes\n");
+		printf("YES\n");
 	else 
-		printf("No\n"); 
+		printf("NO\n"); 
 	} 
  
 	return 0;
